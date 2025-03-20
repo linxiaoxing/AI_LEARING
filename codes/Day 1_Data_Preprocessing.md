@@ -21,7 +21,6 @@ Y = dataset.iloc[ : , 3].values  // : All rows or Column；[a]Row a or column
 ## Step 3: Processing of lost data
 ```python
 from sklearn.impute import SimpleImputer
-import numpy as np
 
 # データXを仮定
 # X = np.array([[1, 2, np.nan], [4, np.nan, 6], [7, 8, 9]])
@@ -43,7 +42,6 @@ X[ : , 0] = labelencoder_X.fit_transform(X[ : , 0])
 
 Use ColumnTransformer
 ```python
-import numpy as np
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.compose import ColumnTransformer
 
